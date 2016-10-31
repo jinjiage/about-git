@@ -1,2 +1,3 @@
 # about-git
-有关git
+##先从一张图开始...
+![git](doc/git.png)
