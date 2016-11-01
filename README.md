@@ -21,9 +21,9 @@
 
 ###常用命令
 ####显示状态
-- git cat-file
+- git cat-file [option] hash
 	
-	git中比较底层的命令，用于查看hash对象的类型、内容等信息，通过这个命令，我们可以查看提交hash、版本库文件系统及文件的挂接联系，进一步了解git的内部原理
+	git中比较底层的命令，用于查看hash对象的类型、内容等信息，通过这个命令，我们可以查看提交hash、版本区文件系统及文件的挂接联系，进一步了解git的内部原理
 	
 	- git cat-file -t hash #显示hash对象类型：提交hash为commit、文件hash为blob、目录树hash为tree
 	
@@ -37,9 +37,11 @@
 
 - git show
 
-- git ls-tree 任意的提交hash
+- git ls-tree [option] 提交hash
 
-	显示版本库的文件系统，每个提交hash下面挂载着版本库的文件系统
+	显示版本区的文件系统，通过git cat-file命令讲解，我们已经可以获知版本区的文件系统，但每次都要通过查看提交hash的内容来间接获取会比较麻烦，而git ls-tree就是为了简化此操作
+	
+	- git ls-tree -r #递归显示文件系统
 
 - git ls-files
 
