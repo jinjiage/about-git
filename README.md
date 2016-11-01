@@ -19,5 +19,31 @@
 
 ###本地仓库<->远程仓库
 
+###常用命令
+####显示状态
+- git cat-file
+	
+	git中比较底层的命令，用于查看hash对象的类型、内容等信息，通过这个命令，我们可以查看提交hash、版本库文件系统及文件的挂接联系，进一步了解git的内部原理
+	
+	- git cat-file -t hash #显示hash对象类型：提交hash为commit、文件hash为blob、目录树hash为tree
+	
+	- git cat-file -p hash #显示hash对象的内容
+	
+![git](doc/git-cat-file.PNG) 
+
+- git log
+	
+	显示当前分支按时间排序的提交函数	
+
+- git show
+
+- git ls-tree 任意的提交hash
+
+	显示版本库的文件系统，每个提交hash下面挂载着版本库的文件系统
+
+- git ls-files
+
+	显示暂存区的文件系统 
+
 ##git命令思维导图
 ![git command](doc/有关Git.png)
