@@ -8,4 +8,4 @@
 - git中每个提交hash下面挂接着文件系统，文件系统包含目录树hash及文件hash，每个hash唯一标识目录树及文件；
 
 ##git命令思维导图
-![git命令思维导图](doc/有关Git.png)
+![git command](doc/有关Git.png)
