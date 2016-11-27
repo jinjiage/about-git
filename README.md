@@ -19,8 +19,8 @@
 
 ###本地仓库<->远程仓库
 
-###常用命令
-####显示状态
+###重要命令
+####状态类
 - git cat-file [option] hash
 	
 	git中比较底层的命令，用于查看hash对象的类型、内容等信息，通过这个命令，我们可以查看提交hash、版本区文件系统及文件的挂接联系，进一步了解git的内部原理
@@ -45,7 +45,24 @@
 
 - git ls-files
 
-	显示暂存区的文件系统 
+	显示暂存区的文件系统
+
+####回退类
+
+###高级技巧
+####拆分仓库
+	cd about  #例如我的一个仓库about
+	git subtree split -P 有关编译原理 -b about-compiler #我要把‘有关编译原理’目录独立出来，在about仓库中新建一个分支为about-compiler存放与‘有关编译原理’有关的信息
+	cd ..
+	mkdir about-compiler
+	cd about-compiler
+	git init
+	git pull ../about about-compiler #从about本地仓库中拉取之前的about-compiler分支，即与‘有关编译原理’有关的所有信息
+	git remote add origin https://github.com/yejinlei/about-compiler.git   #事先在github上创建独立项目
+	git push origin -u master
+
+	#慎重选择，删除about中与‘有关编译原理’有关的信息
+	git filter-branch -f --index-filter "git rm -r -f -q --cached --ignore-unmatch 有关编译原理" --prune-empty HEAD
 
 ##git命令思维导图
 ![git command](doc/有关Git.png)
