@@ -66,3 +66,6 @@
 
 ##git命令思维导图
 ![git command](doc/有关Git.png)
+
+##图解git
+![git command](doc/git_workflow1.png)
