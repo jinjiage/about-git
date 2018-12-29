@@ -20,7 +20,7 @@
 ## git命令讲解.
 ![git command](doc/有关Git.png)
 ### git help -a
-![git help](doc/git_version.png)
+![git help](doc/git_version.PNG)
 
 ### git cat-file [option] hash
 	git中比较底层的命令，用于查看hash对象的类型、内容等信息，通过这个命令，我们可以查看提交hash、版本区文件系统及文件的挂接联系，进一步了解git的内部原理
