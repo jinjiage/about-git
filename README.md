@@ -37,9 +37,9 @@
 
 ### git show
 
-### git merge ###
+### git merge
 
-### git rebase ###
+### git rebase
 
 ### git ls-tree [option] 提交hash
 
