@@ -31,19 +31,23 @@
 	
 ![git](doc/git-cat-file.PNG) 
 
-  ### git log
+### git log
 	
 	显示当前分支按时间排序的提交函数	
 
-  ### git show
+### git show
 
-  ### git ls-tree [option] 提交hash
+### git merge ###
+
+### git rebase ###
+
+### git ls-tree [option] 提交hash
 
 	显示版本区的文件系统，通过git cat-file命令讲解，我们已经可以获知版本区的文件系统，但每次都要通过查看提交hash的内容来间接获取会比较麻烦，而git ls-tree就是为了简化此操作
 	
 	- git ls-tree -r #递归显示文件系统
 
-  ### git ls-files
+### git ls-files
 
 	显示暂存区的文件系统
 
@@ -80,3 +84,4 @@
 3. **沉浸式学习Git**，[zh](http://higrid.net/hi/books/gitimmersion)
 4. **Git Magic魔法**，[zh](http://higrid.net/hi/books/gitmagic)
 5. **Git权威指南**
+6. **Git团队协作**
