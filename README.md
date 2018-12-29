@@ -85,3 +85,4 @@
 4. **Git Magic魔法**，[zh](http://higrid.net/hi/books/gitmagic)
 5. **Git权威指南**
 6. **Git团队协作**
+7. **Git Community Book**，[zh](http://gitbook.liuhui998.com/)
